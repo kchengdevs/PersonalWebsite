@@ -14,6 +14,93 @@ body {
 	font-family: monospace;
 }
 
+svg {
+	padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#first-name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-35%, -50%);
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: first-anim 15s linear infinite;
+}
+
+#last-name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-35%, -50%);
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: last-anim 15s linear infinite;
+}
+
+@keyframes last-anim {
+	from {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+	50% {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+	60% {
+		stroke-dashoffset: 0;
+		fill: transparent;
+	}
+	70% {
+		fill: white;
+	}
+	80% {
+		stroke-dashoffset: 0;
+		fill: white;
+	}
+	90% {
+		fill: transparent;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+}
+
+@keyframes first-anim {
+	from {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+	10% {
+		stroke-dashoffset: 0;
+		fill: transparent;
+	}
+	20% {
+		fill: white;
+	}
+	30% {
+		stroke-dashoffset: 0;
+		fill: white;
+	}
+	40% {
+		fill: transparent;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+	100% {
+		stroke-dashoffset: 500;
+		fill: transparent;
+	}
+}
+
 .navmenu {
 	position: absolute;
 	top: 50%;
@@ -48,7 +135,7 @@ body {
 }
 
 .navmenu ul:hover li a:before {
-	animation: animated-text 1s steps(10,end) 0s 1 normal both,
+	animation: animated-text 1.25s steps(10,end) 0s 1 normal both,
              animated-cursor 600ms steps(5,end) infinite;
 
     color: white;
