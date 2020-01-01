@@ -9,9 +9,97 @@ ul {
 }
 
 body {
-	background-color: rgb(32, 35, 48);
-	height: 100vh;
+	background-color: beige;
+	height: 500vh;
 	font-family: monospace;
+}
+
+div {
+	height: 100vh;
+	width: 100vw;
+}
+
+#cover {
+	background-color: rgb(32, 35, 48);
+}
+
+#logo {
+	height: 90vh;
+	width: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-52%, -58%);
+	opacity: 50%;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: logo-anim 15s linear infinite;
+}
+
+#logo2 {
+	height: 90vh;
+	width: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-52%, -58%);
+	opacity: 50%;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: logos-anim 15s linear infinite;
+}
+
+#about-me {
+
+}
+
+#profile-pic {
+	position: relative;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 60vh;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.slideright{
+  opacity: 0;
+	transform: translateX(-34vw);
+	transition: all 3.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slideright.slideinright{
+  opacity: 1;
+	transform: translateX(0);
+}
+
+#skills {
+	background: rgb(32, 35, 48);
+	font-family: monospace;
+	color: white;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+#list-skills {
+	position:relative;
+	font-weight: 100;
+	font-size: 4vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%, -190%);
+}
+
+#projects {
+
+}
+
+#contact {
+	background-color: rgb(32, 35, 48);
 }
 
 svg {
@@ -23,6 +111,8 @@ svg {
 
 #first-name {
 	position: absolute;
+	width: 40vw;
+	height: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-35%, -50%);
@@ -33,6 +123,8 @@ svg {
 
 #last-name {
 	position: absolute;
+	width: 40vw;
+	height: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-35%, -50%);
@@ -101,8 +193,38 @@ svg {
 	}
 }
 
+@keyframes logo-anim {
+	from {
+		stroke-dashoffset: 500;
+	} 
+	25% {
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dashoffset: 500;
+	}
+	100% {
+		stroke-dashoffset: 500;
+	}
+}
+
+@keyframes logos-anim {
+	from {
+		stroke-dashoffset: 500;
+	} 
+	50% {
+		stroke-dashoffset: 500;
+	}
+	75% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 500;
+	}
+}
+
 .navmenu {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	opacity: 50%;
 	transform: translateY(-50%);
@@ -134,8 +256,36 @@ svg {
   to{border-right-color: transparent;}
 }
 
-.navmenu ul:hover li a:before {
-	animation: animated-text 1.25s steps(10,end) 0s 1 normal both,
+.navmenu ul:hover li:nth-child(1) a:before {
+	animation: animated-text 0.5s steps(3,end) 0s 1 normal both,
+             animated-cursor 600ms steps(5,end) infinite;
+
+    color: white;
+}
+
+.navmenu ul:hover li:nth-child(2) a:before {
+	animation: animated-text 1.25s steps(8,end) 0s 1 normal both,
+             animated-cursor 600ms steps(5,end) infinite;
+
+    color: white;
+}
+
+.navmenu ul:hover li:nth-child(3) a:before {
+	animation: animated-text 1s steps(6,end) 0s 1 normal both,
+             animated-cursor 600ms steps(5,end) infinite;
+
+    color: white;
+}
+
+.navmenu ul:hover li:nth-child(4) a:before {
+	animation: animated-text 1.25s steps(8,end) 0s 1 normal both,
+             animated-cursor 600ms steps(5,end) infinite;
+
+    color: white;
+}
+
+.navmenu ul:hover li:nth-child(5) a:before {
+	animation: animated-text 1.15s steps(7,end) 0s 1 normal both,
              animated-cursor 600ms steps(5,end) infinite;
 
     color: white;
