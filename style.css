@@ -9,7 +9,9 @@ ul {
 }
 
 body {
-	background-color: beige;
+	background-image: url("canvas-background.jpg");
+	background-size: cover;
+	background-position: center;
 	height: 500vh;
 	font-family: monospace;
 }
@@ -24,8 +26,8 @@ div {
 }
 
 #logo {
-	height: 90vh;
-	width: auto;
+	height: auto;
+	width: 42vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -37,8 +39,8 @@ div {
 }
 
 #logo2 {
-	height: 90vh;
-	width: auto;
+	height: auto;
+	width: 42vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -246,7 +248,7 @@ svg {
 
 @keyframes animated-text{
   from{width: 0px;}
-  to{width: 100%;}
+  to{width: 117%;}
 }
 
 /* cursor animations */
@@ -305,8 +307,8 @@ svg {
 	content: attr(data-text);
 	position: absolute;
 	background-color: rgb(32, 35, 48);
-	width: 17px;
-	height: 20.9px;
+	width: 28px;
+	height: 30px;
 	top: 50%;
 	transform: translateY(-50%);
 	border-radius: 10px;
@@ -329,3 +331,7 @@ svg {
 	background: #008080;
 }
 
+@font-face {
+	font-family: Spud;
+	src: url(Spud-Regular.otf);
+}
