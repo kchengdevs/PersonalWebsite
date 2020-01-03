@@ -1,18 +1,32 @@
+// Highlight whichever navbar link was selected
 const allItems = document.querySelectorAll(".navmenu ul li a");
 
-allItems.forEach(item => {
-	item.addEventListener("click", function(e) {
-		for(var i = 0; i < allItems.length; i++) {
-			allItems[i].classList.remove("active");
-		}
-		this.classList.add("active");
-	});
+// Update navbar when scrolling
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  allItems.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
 });
 
 $(document).ready(function() {
 	$(".navmenu ul li a").click(function(e) {
 		var linkHref = $(this).attr("href");
-		
+
 		$("html, body").animate({
 			scrollTop: $(linkHref).offset().top
 		}, 1000);

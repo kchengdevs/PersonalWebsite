@@ -9,10 +9,9 @@ ul {
 }
 
 body {
-	background-image: url("canvas-background.jpg");
-	background-size: cover;
-	background-position: center;
+	background-color: beige;
 	height: 500vh;
+	width: 100vw;
 	font-family: monospace;
 }
 
@@ -22,10 +21,11 @@ div {
 }
 
 #cover {
-	background-color: rgb(32, 35, 48);
+	background: rgb(32, 35, 48);
 }
 
 #logo {
+
 	height: auto;
 	width: 42vw;
 	position: absolute;
@@ -52,7 +52,7 @@ div {
 }
 
 #about-me {
-
+	
 }
 
 #profile-pic {
@@ -60,8 +60,8 @@ div {
 	overflow: hidden;
 	top: 50%;
 	left: 50%;
-	width: auto;
-	height: 60vh;
+	width: 50vw;
+	height: auto;
 	transform: translate(-50%, -50%);
 	object-fit: cover;
 }
@@ -79,21 +79,35 @@ div {
 
 #skills {
 	background: rgb(32, 35, 48);
-	font-family: monospace;
-	color: white;
+	font-family: "Helvetica";
+	color: black;
 }
+
+.container {
+	background-image: url("monitor-background.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	top:50%;
+	left: 50%;
+	width: 83%;
+	height: 95%;
+	transform: translate(-50%, -50%);
+}
+
 
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }
 
 #list-skills {
-	position:relative;
+	position: relative;
 	font-weight: 100;
-	font-size: 4vw;
+	font-size: 2.7vw;
 	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -190%);
+	text-align: center;
+	transform: translateY(-240%);
 }
 
 #projects {
@@ -101,7 +115,7 @@ div {
 }
 
 #contact {
-	background-color: rgb(32, 35, 48);
+	background: rgb(32, 35, 48);
 }
 
 svg {
@@ -248,7 +262,7 @@ svg {
 
 @keyframes animated-text{
   from{width: 0px;}
-  to{width: 117%;}
+  to{width: 100%;}
 }
 
 /* cursor animations */
@@ -307,8 +321,8 @@ svg {
 	content: attr(data-text);
 	position: absolute;
 	background-color: rgb(32, 35, 48);
-	width: 28px;
-	height: 30px;
+	width: 17px;
+	height: 20.9px;
 	top: 50%;
 	transform: translateY(-50%);
 	border-radius: 10px;
@@ -335,3 +349,4 @@ svg {
 	font-family: Spud;
 	src: url(Spud-Regular.otf);
 }
+
