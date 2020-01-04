@@ -9,7 +9,7 @@ ul {
 }
 
 body {
-	background-color: beige;
+	background: rgb(32, 35, 48);
 	height: 500vh;
 	width: 100vw;
 	font-family: monospace;
@@ -21,7 +21,7 @@ div {
 }
 
 #cover {
-	background: rgb(32, 35, 48);
+
 }
 
 #logo {
@@ -52,7 +52,7 @@ div {
 }
 
 #about-me {
-	
+	background-color: beige;
 }
 
 #profile-pic {
@@ -78,7 +78,7 @@ div {
 }
 
 #skills {
-	background: rgb(32, 35, 48);
+
 	font-family: "Helvetica";
 	color: black;
 }
@@ -86,16 +86,82 @@ div {
 .container {
 	background-image: url("monitor-background.svg");
 	background-size: contain;
-	background-position: center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	position: relative;
-	top:50%;
+	top:1%;
 	left: 50%;
 	width: 83%;
-	height: 95%;
-	transform: translate(-50%, -50%);
+	height: 0px;
+	padding-top: 52.5634588%;
+	max-width: 1583.484px;
+	max-height: 1002.812px;
+	transform: translate(-50%, -10%);
+	z-index: -1;
 }
 
+.button-grp {
+	position: relative;
+	top: 70%;
+	bottom: 30%;
+	height: 10%;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.button-grp button {
+	position: relative;
+	padding: 20px 40px;
+	background: #058d9e;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	text-decoration: none;
+	letter-spacing: 4px;
+	transform-style: preserve-3d;
+	transition: ease-in-out 2s;
+	border-radius: 60px;
+	margin-top: 2px;
+}
+
+.button-grp button:hover {
+	transform: rotateX(360deg);
+}
+
+.button-grp button span {
+	display: block;
+	font-weight: bold;
+	transform-style: preserve-3d;
+	transform: perspective(100px) translateZ(20px);
+}
+
+.button-grp button:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 6px;
+	right: 6px;
+	bottom: 4px;
+	border: 2px solid #87cefa;
+	transform-style: preserve-3d;
+	transform: perspective(500px) translateZ(15px);
+	border-radius: 60px;
+}
+
+.button-grp button:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	border: 2px solid #87cefa;
+	transform-style: preserve-3d;
+	transform: perspective(500px) translateZ(-15px);
+	border-radius: 60px;
+}
 
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
@@ -105,17 +171,17 @@ div {
 	position: relative;
 	font-weight: 100;
 	font-size: 2.7vw;
-	top: 50%;
+	top: 0%;
 	text-align: center;
-	transform: translateY(-240%);
+	transform: translateY(-1090%);
 }
 
 #projects {
-
+	background-color: beige;
 }
 
 #contact {
-	background: rgb(32, 35, 48);
+
 }
 
 svg {

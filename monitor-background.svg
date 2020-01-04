@@ -1,5 +1,13 @@
+      
+
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1583.484" height="1002.812" viewBox="0 0 1583.484 1002.812">
   <defs>
+    <style>
+      @font-face {
+        font-family: Spud;
+        src: url(Spud-Regular.otf);
+      }
+      </style>
     <filter id="Rectangle_3" x="66.396" y="336.452" width="1457" height="107" filterUnits="userSpaceOnUse">
       <feOffset dx="5" dy="7" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3.5" result="blur"/>
