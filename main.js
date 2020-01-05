@@ -23,6 +23,7 @@ $(document).ready(function(){
     $(this).scrollTop(0);
 });
 
+// Smooth scrolling
 $(document).ready(function() {
 	$(".navmenu ul li a").click(function(e) {
 		var linkHref = $(this).attr("href");
@@ -49,6 +50,33 @@ $(document).ready(function() {
       }
     });
   });
+
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#Cpop');
+const closeBtn = document.querySelector('.closeBtn');
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
 
 
 class TypeWriter {
