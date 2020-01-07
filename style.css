@@ -9,7 +9,7 @@ ul {
 }
 
 body {
-	background: rgb(32, 35, 48);
+	background: #0a192f;
 	height: 500vh;
 	width: 100vw;
 	font-family: monospace;
@@ -52,14 +52,20 @@ div {
 }
 
 #about-me {
-	background-color: beige;
+
+}
+
+#about-header {
+	font-family: "Arial";
+	color: #CCD6F6;
+	font-weight: 550;
 }
 
 #profile-pic {
 	position: relative;
 	overflow: hidden;
 	top: 50%;
-	left: 50%;
+	left: 80%;
 	width: 50vw;
 	height: auto;
 	transform: translate(-50%, -50%);
@@ -89,80 +95,82 @@ div {
 	background-position: center top;
 	background-repeat: no-repeat;
 	position: relative;
-	top:1%;
+	top:10%;
 	left: 50%;
-	width: 83%;
-	height: 0px;
-	padding-top: 52.5634588%;
-	max-width: 1583.484px;
-	max-height: 1002.812px;
+	width: 83vw;
+	height: 31.3140948vw;
 	transform: translate(-50%, -10%);
 	z-index: -1;
 }
 
 .button-grp {
 	position: relative;
-	top: 70%;
-	bottom: 30%;
+	top: 15%;
 	height: 10%;
 	width: 90%;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	justify-content: space-around;
 	z-index: 1;
 }
 
 .button-grp button {
 	position: relative;
-	padding: 20px 40px;
-	background: #058d9e;
+	padding: 10px 30px;
+	margin: 20px 10px;
+	border-radius: 5px;
+	background: #172a45;
 	color: #fff;
-	text-transform: uppercase;
-	font-family: sans-serif;
-	text-decoration: none;
-	letter-spacing: 4px;
-	transform-style: preserve-3d;
-	transition: ease-in-out 2s;
-	border-radius: 60px;
-	margin-top: 2px;
+	font-size: 20px;
+	font-family: monospace;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
 	outline: none;
+	border-color: transparent;
 }
 
 .button-grp button:hover {
-	transform: rotateX(360deg);
+	background: #ff0057;
 }
 
-.button-grp button span {
-	display: block;
-	font-weight: bold;
-	transform-style: preserve-3d;
-	transform: perspective(100px) translateZ(20px);
+.button-grp button:hover:before {
+	transform-origin: left;
+	transform: scaleX(1);
 }
 
 .button-grp button:before {
 	content: '';
 	position: absolute;
-	top: 4px;
-	left: 6px;
-	right: 6px;
-	bottom: 4px;
-	border: 2px solid #87cefa;
-	transform-style: preserve-3d;
-	transform: perspective(500px) translateZ(15px);
-	border-radius: 60px;
+	top: 8px;
+	left: 8px;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: #fff;
+	z-index: -1;
+	transition: transform 0.5s ease-in-out;
+	transform-origin: right;
+	transform: scaleX(0);
 }
 
 .button-grp button:after {
 	content: '';
 	position: absolute;
-	top: 2px;
-	left: 2px;
-	right: 2px;
-	bottom: 2px;
-	border: 2px solid #87cefa;
-	transform-style: preserve-3d;
-	transform: perspective(500px) translateZ(-15px);
-	border-radius: 60px;
+	top: 8px;
+	left: 8px;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	z-index: -1;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.button-grp button:hover:after {
+	top: -8px;
+	left: -8px;
 }
 
 .txt-type > .txt {
@@ -171,11 +179,18 @@ div {
 
 #list-skills {
 	position: relative;
+	background-image: url("searchbar.svg");
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
 	font-weight: 100;
 	font-size: 2.7vw;
-	top: 0%;
+	padding-top: 7px;
+	padding-bottom: 15px;
+	width: 80%;
+	top: 50%;
+	left: 8%;
 	text-align: center;
-	transform: translateY(-1090%);
 }
 
 .C-modal {
@@ -216,7 +231,7 @@ div {
 }
 
 #projects {
-	background-color: beige;
+
 }
 
 #console {
@@ -267,7 +282,7 @@ div {
 
 .card-container .card .face.face1 {
 	position: relative;
-	background: #333;
+	background: #172a45;
 	display: flex;
 	text-align: center;
 	z-index: 1;
@@ -303,10 +318,24 @@ div {
 	box-sizing: border-box;
 	box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
 	transform: translateY(-150px);
+	transition-property: transform, z-index;
+	transition-delay: 0s, -0.5s;
+	z-index: 0;
 }
 
 .card-container .card:hover .face.face2 {
 	transform: translate(0px);
+	transition-property: transform, z-index;
+	transition-delay: 0s, 0.5s;
+	z-index: 1;
+}
+
+@keyframes zchange {
+	from {
+		z-index: 2;
+	} to {
+		z-index: 3;
+	}
 }
 
 .card-container .card .face.face2 .content p {
@@ -378,11 +407,11 @@ svg {
 		fill: transparent;
 	}
 	70% {
-		fill: white;
+		fill: #64ffda;
 	}
 	80% {
 		stroke-dashoffset: 0;
-		fill: white;
+		fill: #64ffda;
 	}
 	90% {
 		fill: transparent;
@@ -404,11 +433,11 @@ svg {
 		fill: transparent;
 	}
 	20% {
-		fill: white;
+		fill: #64ffda;
 	}
 	30% {
 		stroke-dashoffset: 0;
-		fill: white;
+		fill: #64ffda;
 	}
 	40% {
 		fill: transparent;
@@ -459,6 +488,7 @@ svg {
 	top: 50%;
 	opacity: 50%;
 	transform: translateY(-50%);
+	z-index: 100;
 }
 
 .navmenu:hover {
@@ -535,13 +565,13 @@ svg {
 	font-size: 1.5rem;
 	content: attr(data-text);
 	position: absolute;
-	background-color: rgb(32, 35, 48);
+	background-color: #0a192f;
 	width: 17px;
 	height: 20.9px;
 	top: 50%;
 	transform: translateY(-50%);
-	border-radius: 10px;
-	border: 4px solid #008080;
+	border-radius: 8px;
+	border: 4px solid rgba(100, 255, 218, 0.65);
 	transition: background 250ms;
 	white-space: nowrap;
 	overflow: hidden;
