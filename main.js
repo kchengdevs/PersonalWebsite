@@ -59,11 +59,14 @@ const closeBtn = document.querySelector('.closeBtn');
 // Events
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
-window.addEventListener('click', outsideClick);
 
 // Open
 function openModal() {
   modal.style.display = 'block';
+  modal1.style.display = 'none';
+  modal2.style.display = 'none';
+  modal3.style.display = 'none';
+  modal4.style.display = 'none';
 }
 
 // Close
@@ -71,13 +74,97 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
-// Close If Outside Click
-function outsideClick(e) {
-  if (e.target == modal) {
-    modal.style.display = 'none';
-  }
+// Get DOM Elements
+const modal1 = document.querySelector('#my-modal1');
+const modalBtn1 = document.querySelector('#Jpop');
+const closeBtn1 = document.querySelector('.closeBtn1');
+
+// Events
+modalBtn1.addEventListener('click', openModal1);
+closeBtn1.addEventListener('click', closeModal1);
+
+// Open
+function openModal1() {
+  modal1.style.display = 'block';
+  modal.style.display = 'none';
+  modal2.style.display = 'none';
+  modal3.style.display = 'none';
+  modal4.style.display = 'none';       
 }
 
+// Close
+function closeModal1() {
+  modal1.style.display = 'none';
+}
+
+// Get DOM Elements
+const modal2 = document.querySelector('#my-modal2');
+const modalBtn2 = document.querySelector('#Hpop');
+const closeBtn2 = document.querySelector('.closeBtn2');
+
+// Events
+modalBtn2.addEventListener('click', openModal2);
+closeBtn2.addEventListener('click', closeModal2);
+
+// Open
+function openModal2() {
+  modal2.style.display = 'block';
+  modal.style.display = 'none';
+  modal1.style.display = 'none';
+  modal3.style.display = 'none';
+  modal4.style.display = 'none';        
+}
+
+// Close
+function closeModal2() {
+  modal2.style.display = 'none';
+}
+
+// Get DOM Elements
+const modal3 = document.querySelector('#my-modal3');
+const modalBtn3 = document.querySelector('#Spop');
+const closeBtn3 = document.querySelector('.closeBtn3');
+
+// Events
+modalBtn3.addEventListener('click', openModal3);
+closeBtn3.addEventListener('click', closeModal3);
+
+// Open
+function openModal3() {
+  modal3.style.display = 'block';
+  modal.style.display = 'none'; 
+  modal1.style.display = 'none';
+  modal2.style.display = 'none';
+  modal4.style.display = 'none';       
+}
+
+// Close
+function closeModal3() {
+  modal3.style.display = 'none';
+}
+
+// Get DOM Elements
+const modal4 = document.querySelector('#my-modal4');
+const modalBtn4 = document.querySelector('#Ppop');
+const closeBtn4 = document.querySelector('.closeBtn4');
+
+// Events
+modalBtn4.addEventListener('click', openModal4);
+closeBtn4.addEventListener('click', closeModal4);
+
+// Open
+function openModal4() {
+  modal4.style.display = 'block';
+  modal.style.display = 'none'; 
+  modal1.style.display = 'none';
+  modal2.style.display = 'none';
+  modal3.style.display = 'none';       
+}
+
+// Close
+function closeModal4() {
+  modal4.style.display = 'none';
+}
 
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
@@ -85,7 +172,7 @@ class TypeWriter {
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
+    this.wait = parseInt(wait, 8);
     this.type();
     this.isDeleting = false;
   }
@@ -126,7 +213,7 @@ class TypeWriter {
       // Move to next word
       this.wordIndex++;
       // Pause before start typing
-      typeSpeed = 200;
+      typeSpeed = 500;
     }
 
     setTimeout(() => this.type(), typeSpeed);

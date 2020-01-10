@@ -111,7 +111,6 @@ div {
 	width: 83vw;
 	height: 31.3140948vw;
 	transform: translate(-50%, -10%);
-	z-index: -1;
 }
 
 .button-grp {
@@ -208,29 +207,67 @@ div {
 .C-modal {
 	display: none;
 	position: fixed;
-	width: 93%;
-	height: 75%;
-	background-color: white;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	padding: 2em;
-	border-radius: 20px;
-	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+	width: 96%;
+	height: 100%;
+	top: -0.5%;
+	left: 1.3%;
+	background-image: url("CSS-skill.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #64ffda;
+	font-family: monospace;
 	animation: modalopen 1s;
+	z-index: 1;
+}
+
+.C-modal1 {
+	background-image: url("Java-skill.svg");
+}
+
+.C-modal2 {
+	background-image: url("HTML-skill.svg");
+}
+
+.C-modal3 {
+	background-image: url("Swift-skill.svg");
+}
+
+.C-modal4 {
+	background-image: url("Public-skill.svg");
 }
 
 .closeBtn {
-	color: #ccc;
-	float: right;
-	font-size: 30px;
+	color: #fff;
+	position: relative;
+	top: 5.5%;
+	left: 21%;
+	font-size: 3vw;
+}
+
+.closeBtn2 {
+	left: 26.4%;
+}
+
+.closeBtn3 {
+	left: 33%;
+}
+
+.closeBtn4 {
+	left: 34%;
 }
 
 .closeBtn:hover,
 .closeBtn:focus {
-	color: #000;
+	color: #64ffda;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.skill-paragraph {
+	color: #fff;
+	font-size: 1.7vw;
+	padding-top: 3.7%;
 }
 
 @keyframes modalopen {
@@ -274,15 +311,17 @@ div {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -40%);
-	width: 1000px;
+	width: 1100px;
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .card-container .card {
-	position: relative;
-
+	width: 300px;
+	height: 600px;
 }
 
 .card-container .card .face {
@@ -378,7 +417,7 @@ div {
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-24%, -50%);
+	transform: translate(-27%, -50%);
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -402,6 +441,15 @@ div {
 
 .socials li:nth-child(4):hover .fa {
 	color: #000;
+}
+
+.socials li:nth-child(5):hover .fa {
+	color: #D44638;
+}
+
+.socials li:nth-child(5) .fa {
+	font-weight: 1000;
+	font-size: 50px;
 }
 
 .socials li a {
@@ -503,6 +551,18 @@ div {
 }
 
 .socials li:hover:nth-child(4) a:after {
+	background: #fff;
+}
+
+.socials li:hover:nth-child(5) a {
+	background: #eee;
+}
+
+.socials li:hover:nth-child(5) a:before {
+	background: #ddd;
+}
+
+.socials li:hover:nth-child(5) a:after {
 	background: #fff;
 }
 
