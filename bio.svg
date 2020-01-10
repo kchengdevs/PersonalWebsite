@@ -1,34 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="710" viewBox="0 0 780 710">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="764" height="686" viewBox="0 0 764 686">
   <defs>
-    <filter id="Line_1" x="634" y="665" width="131" height="45" filterUnits="userSpaceOnUse">
+    <filter id="Line_1" x="618" y="641" width="131" height="45" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feFlood flood-opacity="0.675"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Line_2" x="16" y="125" width="45" height="142" filterUnits="userSpaceOnUse">
+    <filter id="Line_2" x="0" y="101" width="45" height="142" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-2"/>
       <feFlood flood-opacity="0.675"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Line_3" x="31" y="125" width="131" height="45" filterUnits="userSpaceOnUse">
+    <filter id="Line_3" x="15" y="101" width="131" height="45" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-3"/>
       <feFlood flood-opacity="0.675"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Line_4" x="735" y="568" width="45" height="142" filterUnits="userSpaceOnUse">
+    <filter id="Line_4" x="719" y="544" width="45" height="142" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-4"/>
       <feFlood flood-opacity="0.675"/>
       <feComposite operator="in" in2="blur-4"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rectangle_1" x="58" y="162" width="685" height="518" filterUnits="userSpaceOnUse">
+    <filter id="Rectangle_1" x="42" y="138" width="685" height="518" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-5"/>
       <feFlood flood-opacity="0.518"/>
@@ -36,34 +36,34 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_2" data-name="Group 2" transform="translate(-212 -111)">
+  <g id="Group_2" data-name="Group 2" transform="translate(-228 -135)">
     <g id="Group_1" data-name="Group 1">
-      <g transform="matrix(1, 0, 0, 1, 212, 111)" filter="url(#Line_1)">
-        <line id="Line_1-2" data-name="Line 1" x2="101" transform="translate(639 677.5)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
+      <g transform="matrix(1, 0, 0, 1, 228, 135)" filter="url(#Line_1)">
+        <line id="Line_1-2" data-name="Line 1" x2="101" transform="translate(623 653.5)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 212, 111)" filter="url(#Line_2)">
-        <line id="Line_2-2" data-name="Line 2" y1="112" transform="translate(28.5 130)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
+      <g transform="matrix(1, 0, 0, 1, 228, 135)" filter="url(#Line_2)">
+        <line id="Line_2-2" data-name="Line 2" y1="112" transform="translate(12.5 106)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 212, 111)" filter="url(#Line_3)">
-        <line id="Line_3-2" data-name="Line 3" x1="101" transform="translate(36 137.5)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
+      <g transform="matrix(1, 0, 0, 1, 228, 135)" filter="url(#Line_3)">
+        <line id="Line_3-2" data-name="Line 3" x1="101" transform="translate(20 113.5)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 212, 111)" filter="url(#Line_4)">
-        <line id="Line_4-2" data-name="Line 4" y2="112" transform="translate(747.5 573)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
+      <g transform="matrix(1, 0, 0, 1, 228, 135)" filter="url(#Line_4)">
+        <line id="Line_4-2" data-name="Line 4" y2="112" transform="translate(731.5 549)" fill="none" stroke="#64ffda" stroke-width="15" opacity="0.85"/>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 212, 111)" filter="url(#Rectangle_1)">
-        <path id="Rectangle_1-2" data-name="Rectangle 1" d="M0,0H588a67,67,0,0,1,67,67V488a0,0,0,0,1,0,0H67A67,67,0,0,1,0,421V0A0,0,0,0,1,0,0Z" transform="translate(63 167)" fill="#172a45"/>
+      <g transform="matrix(1, 0, 0, 1, 228, 135)" filter="url(#Rectangle_1)">
+        <path id="Rectangle_1-2" data-name="Rectangle 1" d="M0,0H588a67,67,0,0,1,67,67V488a0,0,0,0,1,0,0H67A67,67,0,0,1,0,421V0A0,0,0,0,1,0,0Z" transform="translate(47 143)" fill="#172a45"/>
       </g>
       <text id="Hello_I_m_Kevin_a_computer_science_major_at_Rensselaer_Polytechnic_Institute_whose_coding_abilities_are_an_extension_of_the_mind._I_believe_that_the_purpose_behind_creating_programs_should_be_driven_by_passion_and_creativity._My_portfolio_showcases_proj" data-name="Hello! I’m Kevin, a computer science major at Rensselaer Polytechnic Institute whose coding abilities are an extension of the mind. I believe that the purpose behind creating programs should be driven by passion and  creativity. My portfolio showcases proj" transform="translate(348 385)" fill="#a8b2d1" font-size="20" font-family="Krungthep"><tspan x="0" y="20">Hello! I’m Kevin, a computer science major at </tspan><tspan x="0" y="45">Rensselaer Polytechnic Institute whose coding </tspan><tspan x="0" y="70">abilities are an extension of the mind. I believe </tspan><tspan x="0" y="95">that the purpose behind creating programs </tspan><tspan x="0" y="120" xml:space="preserve">should be driven by passion and  creativity. My </tspan><tspan x="0" y="145">portfolio showcases projects that I published </tspan><tspan x="0" y="170">based on the principle of benefitting users or </tspan><tspan x="0" y="195">were brought about by the desire to explore </tspan><tspan x="0" y="220">new languages. I’m equipped with great ideas </tspan><tspan x="0" y="245">to continue creating and to enter unfamiliar </tspan><tspan x="0" y="270">territories.</tspan></text>
     </g>
-    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(230 122)" fill="#0a192f" stroke="#a8b2d1" stroke-width="3">
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(636 149)" fill="#0a192f" stroke="#a8b2d1" stroke-width="3">
       <rect width="332" height="77" rx="17" stroke="none"/>
       <rect x="1.5" y="1.5" width="329" height="74" rx="15.5" fill="none"/>
     </g>
-    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(212 111)" fill="#0a192f" stroke="#a8b2d1" stroke-width="3">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(651 135)" fill="#0a192f" stroke="#a8b2d1" stroke-width="3">
       <rect width="332" height="77" rx="17" stroke="none"/>
       <rect x="1.5" y="1.5" width="329" height="74" rx="15.5" fill="none"/>
     </g>
-    <path id="Path_1" data-name="Path 1" d="M.96-2.856H9.836L11.37-7.179H24.354l1.589,4.323h8.821L18.273-44.46h-.822ZM14.219-14.7l3.671-10.443L21.45-14.7ZM48.132-35.027H55.09c2.246,0,3.616,1.8,3.616,4.043,0,2.19-1.37,4.043-3.616,4.043H48.132ZM40.243-2.856h15.5a11.8,11.8,0,0,0,11.56-12.071,9.824,9.824,0,0,0-4.054-8.029c2.465-1.741,3.506-4.885,3.616-7.917.164-7.074-4.164-12.184-11.122-12.184h-15.5Zm7.889-16.058H55.09a3.9,3.9,0,0,1,3.945,3.986,3.944,3.944,0,0,1-3.945,4.043H48.132ZM93.112-2.294c26.955,0,26.955-41.38,0-41.38S66.157-2.294,93.112-2.294Zm0-8.31c-15.669,0-15.669-24.816,0-24.816S108.781-10.6,93.112-10.6Zm55.664-6.232V-43H141v26.108c0,8.422-12.711,8.422-12.711,0V-43h-7.835v26.164C120.451,2.253,148.776,2.253,148.776-16.836Zm22.956,13.98V-34.971h9.752v-7.973H154.145v7.973H163.9V-2.856Zm49.2-23.132-15.45-17.63h-2.52V-2.856h7.944v-22.4l10.026,10.78,10.026-10.78-.055,22.4h7.944V-43.618h-2.465ZM267.939-2.856v-8.029H255.5v-8.029h10.3v-8.029H255.5v-8.029h11.779V-43H247.667V-2.856Z" transform="translate(244 173)" fill="#a8b2d1"/>
-    <line id="Line_5" data-name="Line 5" x2="387" transform="translate(573.5 149.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.3"/>
+    <path id="Path_1" data-name="Path 1" d="M.96-2.856H9.836L11.37-7.179H24.354l1.589,4.323h8.821L18.273-44.46h-.822ZM14.219-14.7l3.671-10.443L21.45-14.7ZM48.132-35.027H55.09c2.246,0,3.616,1.8,3.616,4.043,0,2.19-1.37,4.043-3.616,4.043H48.132ZM40.243-2.856h15.5a11.8,11.8,0,0,0,11.56-12.071,9.824,9.824,0,0,0-4.054-8.029c2.465-1.741,3.506-4.885,3.616-7.917.164-7.074-4.164-12.184-11.122-12.184h-15.5Zm7.889-16.058H55.09a3.9,3.9,0,0,1,3.945,3.986,3.944,3.944,0,0,1-3.945,4.043H48.132ZM93.112-2.294c26.955,0,26.955-41.38,0-41.38S66.157-2.294,93.112-2.294Zm0-8.31c-15.669,0-15.669-24.816,0-24.816S108.781-10.6,93.112-10.6Zm55.664-6.232V-43H141v26.108c0,8.422-12.711,8.422-12.711,0V-43h-7.835v26.164C120.451,2.253,148.776,2.253,148.776-16.836Zm22.956,13.98V-34.971h9.752v-7.973H154.145v7.973H163.9V-2.856Zm49.2-23.132-15.45-17.63h-2.52V-2.856h7.944v-22.4l10.026,10.78,10.026-10.78-.055,22.4h7.944V-43.618h-2.465ZM267.939-2.856v-8.029H255.5v-8.029h10.3v-8.029H255.5v-8.029h11.779V-43H247.667V-2.856Z" transform="translate(683 197)" fill="#a8b2d1"/>
+    <line id="Line_5" data-name="Line 5" x2="387" transform="translate(233.5 179.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.3"/>
   </g>
 </svg>
