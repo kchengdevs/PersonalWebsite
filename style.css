@@ -58,23 +58,20 @@ div {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	top: 50%;
-	left: 50%;
 	width: 95vw;
 	height: 80vh;
-	transform: translate(-50%, -50%);
 }
 
 #bio {
-	width: 40vw;
+	width: 45%;
 	min-width: 300px;
 	height: auto;
 }
 
 #profile-pic {
-	display: flex;
+
 	overflow: hidden;
-	width: 50vw;
+	width: 53%;
 	min-width: 400px;
 	height: auto;
 }
@@ -412,15 +409,20 @@ div {
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-27%, -50%);
+	transform: translate(-50%, -50%);
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	height: 20%;
+	align-content: center;
+	justify-content: center;
 }
 
 .socials li {
 	list-style: none;
-	margin: 0 40px;
+	margin: 20px 40px;
 }
 
 .socials li a .fa {
