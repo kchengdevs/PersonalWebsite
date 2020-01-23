@@ -567,7 +567,8 @@ div {
 	position: relative;
 	width: 100vw;
 	height: 10vh;
-	top: 70%;
+	top:90vh;
+	transform: translateY(-200%);
 	text-align: center;
 	justify-content: center;
 	font-family: monospace;
@@ -605,8 +606,8 @@ svg {
 	top: 50%;
 	left: 50%;
 	transform: translate(-35%, -50%);
-	stroke-dasharray: 700;
-	stroke-dashoffset: 700;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
 	animation: first-anim 15s linear infinite;
 }
 
@@ -617,18 +618,18 @@ svg {
 	top: 50%;
 	left: 50%;
 	transform: translate(-35%, -50%);
-	stroke-dasharray: 700;
-	stroke-dashoffset: 700;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
 	animation: last-anim 15s linear infinite;
 }
 
 @keyframes last-anim {
 	from {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 	50% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 	60% {
@@ -647,14 +648,14 @@ svg {
 		stroke-dashoffset: 0;
 	}
 	100% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 }
 
 @keyframes first-anim {
 	from {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 	10% {
@@ -673,42 +674,42 @@ svg {
 		stroke-dashoffset: 0;
 	}
 	50% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 	100% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 		fill: transparent;
 	}
 }
 
 @keyframes logo-anim {
 	from {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	} 
 	25% {
 		stroke-dashoffset: 0;
 	}
 	50% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	}
 	100% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	}
 }
 
 @keyframes logos-anim {
 	from {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	} 
 	50% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	}
 	75% {
 		stroke-dashoffset: 0;
 	}
 	100% {
-		stroke-dashoffset: 700;
+		stroke-dashoffset: 500;
 	}
 }
 
